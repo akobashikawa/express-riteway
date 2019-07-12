@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "riteway test/**/*-test.js | tap-nirvana"
+    "test": "nyc riteway test/**/*-rt.js | tap-nirvana"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -16,6 +16,7 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "nyc": "^14.1.1",
     "riteway": "^6.0.3",
     "tap-nirvana": "^1.1.0"
   }
